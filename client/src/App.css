@@ -30,26 +30,27 @@
 
 .job {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   justify-content: 'space-around';
   padding: 10px;
   box-shadow: 0.1rem 0.1rem 0.2rem black;
   transition: 0.2s ease;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: larger;
   font-weight: 500;
+
 }
 
 .job:hover {
   color: rgb(216, 85, 85);
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

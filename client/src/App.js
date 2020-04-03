@@ -11,7 +11,7 @@ const mockJobs = [
   },
   {
     title: "UI/UX Designer",
-    company: "Facevook",
+    company: "Facebook",
     pay: "80,000"
   }
 ]
