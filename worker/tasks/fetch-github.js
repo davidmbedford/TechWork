@@ -3,7 +3,6 @@ const redis = require("redis");
 const client = redis.createClient();
 
 const { promisify } = require("util");
-// const getAsync = promisify(client.get).bind(client);
 const setAsync = promisify(client.set).bind(client);
 
 const baseURL = 'https://jobs.github.com/positions.json';
@@ -29,10 +28,9 @@ async function fetchGithub() {
   console.log('got ', allJobs.length, ' jobs fo real');
 
 
-  // filter algorhtm
+  // filter algorithm
   const jrJobs = allJobs.filter(job => {
     const jobTitle = job.title.toLowerCase();
-
     // algo logic
     if (
       jobTitle.includes('senior') ||
