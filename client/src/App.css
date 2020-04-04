@@ -34,16 +34,17 @@
   display: flex;
   justify-content: 'space-around';
   padding: 10px;
-  box-shadow: 0.1rem 0.1rem 0.2rem black;
+  box-shadow: null;
   transition: 0.2s ease;
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: larger;
-  font-weight: 500;
+  font-weight: 800;
 
 }
 
 .job:hover {
   color: rgb(216, 85, 85);
+  box-shadow: 0.1rem 0.1rem  black;
 }
 
 /* @keyframes App-logo-spin {

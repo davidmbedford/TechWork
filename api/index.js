@@ -11,8 +11,9 @@ const getAsync = promisify(client.get).bind(client);
 app.get('/jobs', async (req, res) => {
   const jobs = await getAsync('github');
   console.log(JSON.parse(jobs).length);
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
 
-  return res.send(jobs)
+  return res.send(jobs);
 })
 
 app.listen(port, () => 
