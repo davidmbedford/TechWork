@@ -15,6 +15,9 @@ export default function Jobs({jobs}) {
 
   const [activeStep, setActiveStep] = React.useState(0);
 
+  const jobsOnPage = jobs.slice(activeStep * 50, (activeStep * 50) + 50);
+
+
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -28,8 +31,11 @@ export default function Jobs({jobs}) {
       <Typography variant="h4" component="h1">
         Entry Level Software Jobs 
       </Typography>
+      <Typography variant="h6" component="h2">
+        Found {numJobs} Jobs
+      </Typography>
       {
-      jobs.map(
+      jobsOnPage.map(
         (job, i) => <Job key={i} job={job} />
         )
       }
