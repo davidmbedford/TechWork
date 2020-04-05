@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -26,25 +26,31 @@
 
 .App-link {
   color: #61dafb;
+} */
+
+body {
+  margin: 20px 40px;
 }
 
 .job {
   width: 80%;
   margin: 10px auto;
   display: flex;
-  justify-content: 'space-around';
-  padding: 10px;
-  box-shadow: null;
+  justify-content: 'space-between';
+  padding: 20px 10px;
+  align-items: center;
+  /* box-shadow: null; */
   transition: 0.2s ease;
+  /* Font */
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: larger;
   font-weight: 800;
-
 }
 
 .job:hover {
+  cursor: pointer;
   color: rgb(216, 85, 85);
-  box-shadow: 0.1rem 0.1rem  black;
+  /* box-shadow: 0.1rem 0.1rem  black; */
 }
 
 /* @keyframes App-logo-spin {
