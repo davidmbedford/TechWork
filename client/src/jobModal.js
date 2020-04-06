@@ -41,11 +41,13 @@ export default function jobModal({job, open, handleClose}) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
-            Disagree
+            Close
           </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
+        <a href={job.url} target="_blank">
+          <Button color="primary">
+            Apply
           </Button>
+        </a>
         </DialogActions>
       </Dialog>
     </div>
