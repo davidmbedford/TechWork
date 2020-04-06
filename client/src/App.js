@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import Jobs from './jobs.js';
 
 const JOB_API_URL = 'http://localhost:3001/jobs';
@@ -10,8 +9,7 @@ async function fetchJobs(updateCb) {
   const json = await res.json();
 
   updateCb(json);
-
-  console.log({json});
+  // console.log({json});
 }
 
 function App() {
